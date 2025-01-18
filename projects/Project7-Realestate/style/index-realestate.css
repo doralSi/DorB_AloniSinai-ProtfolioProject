@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Heebo", serif;
+  direction: rtl;
+  background-color: #FFFFFF;
+}
+
+header {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 4rem;
+  gap: 8rem;
+  background-color: #0EE1E1;
+}
+
+.icon-header {
+  width: 95px;
+  height: 95px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  margin-top: 6rem;
+}
+
+.icon-header i {
+  color: #000000;
+  font-size: 54px;
+}
+
+.icon-header i:hover {
+  font-size: 58px;
+}
+
+.head-container {
+  max-width: 1920px;
+  height: 30rem;
+  margin: 0 auto;
+  display: flex;
+  background-color: #0EE1E1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 0;
+}
+
+.image-head {
+  margin-right: 5rem;
+}
+
+.image-head img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.content-head {
+  max-width: 40rem;
+  width: 100%;
+}
+
+.content-head h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.content-head p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.content-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.content-box {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.content-box i {
+  color: #18191C;
+  font-size: 55px;
+  margin-bottom: 1rem;
+}
+
+.content-box h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0ee1e1;
+  margin-bottom: 0.5rem;
+}
+
+.content-box p {
+  font-size: 1.2rem;
+  color: #020253;
+  margin-bottom: 2rem;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 5rem;
+  box-sizing: border-box;
+}
+
+.map-box {
+  max-width: 1000px;
+  width: 100%;
+  height: 900px;
+  background-color: #0EE1E1;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.map-box iframe {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-box h2 {
+  font-size: 3rem;
+  color: #090909;
+  margin-bottom: 0.5rem;
+}
+
+.form-box p {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-box label {
+  color: #2C2C2C;
+  font-size: 1rem;
+  text-align: right;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-family: "Heebo";
+}
+
+.form-box input,
+.form-box textarea {
+  background-color: #E5EEFF;
+  border: none;
+  border-bottom: #0EE1E1 4px solid;
+  padding: 10px;
+  border-radius: 1px;
+  width: 100%;
+}
+
+.form-box textarea {
+  height: 8rem;
+}
+
+.form-box button {
+  font-weight: 500;
+  font-family: "Heebo";
+  font-size: 1.5rem;
+  background-color: #0EE1E1;
+  color: #000000;
+  padding: 0.8rem 5rem;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 2.5rem;
+}
+
+.form-box button:hover {
+  background-color: #d4b043;
+}
+
+footer {
+  width: 100%;
+  max-width: 1920px;
+  height: 4rem;
+  margin: 0 auto;
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  border-bottom: #0EE1E1 2rem solid;
+}
+
+.icon-footer {
+  width: 100px;
+  height: 100px;
+  background-color: #0EE1E1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 8rem;
+}
+
+.icon-footer i {
+  color: #000;
+  font-size: 48px;
+}
+
+.icon-footer i:hover {
+  font-size: 56px;
+}
+
+/* רספונסיבי */
+@media (max-width: 768px) {
+
+  header {
+    display: none;
+  }
+
+  .head-container {
+    flex-direction: column;
+    align-items: center;
+    align-items: start;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .image-head {
+    margin-top: 2rem;
+    margin-right: 3rem;
+  }
+
+  .image-head img {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .content-head {
+    text-align: center;
+    max-width: 90%;
+    margin-top: -4rem;
+    margin-right: 2rem;
+  }
+
+  .content-head h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: right;
+  }
+
+  .content-head p {
+    width: 90%;
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  .content-container {
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .content-box {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 0;
+  }
+
+  .map-box {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+    border: #0EE1E1 1.5rem solid;
+  }
+
+  .map-box iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-box {
+    order: 1;
+    width: 90%;
+    max-width: 100%;
+    margin: 2rem auto;
+  }
+
+  .form-box h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .form-box p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-box input,
+  .form-box textarea {
+    background-color: #F0FFFF;
+    border: none;
+    border-bottom: #0EE1E1 4px solid;
+  }
+
+  .form-box button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  footer {
+    align-items: center;
+    gap: 2rem;
+    margin-top: 8rem;
+  }
+
+  .icon-footer {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 3rem;
+  }
+
+  .icon-footer i {
+    font-size: 25px;
+  }
+}

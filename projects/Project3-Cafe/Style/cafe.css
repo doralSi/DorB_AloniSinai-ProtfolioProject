@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: "Heebo", serif;
+    color: #020253;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.form-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.form-content {
+    max-width: 24rem;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.form-container h1 {
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.form-container p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 20rem;
+    margin: 0 auto 2rem auto
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+form input {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: #020253 4px solid;
+}
+
+form button {
+    width: 40%;
+    max-width: 200px;
+    padding: 0.8rem;
+    background: #020253;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #686897;
+}
+
+.image-container {
+    flex: 3;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-desktop img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+        gap: 1rem;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+        max-height: 34vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: -1;
+    }
+
+    .image-desktop {
+        display: none;
+    }
+
+    .image-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .image-mobile img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-grow: 1;
+        order: 0;
+    }
+
+    .form-content {
+        max-width: 22rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-container h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-container p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    form {
+        width: 100%;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center
+    }
+
+    form input {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    form button {
+        width: 100%;
+        max-width: 320px;
+        padding: 0.8rem;
+        font-size: 1.2rem;
+    }
+}

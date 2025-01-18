@@ -1,0 +1,152 @@
+ input[type="checkbox"] {
+     display: none;
+ }
+
+ #hamburger {
+     display: none;
+     font-size: 2rem;
+     cursor: pointer;
+     color: black;
+     margin-left: auto;
+ }
+
+ @media (max-width: 700px) {
+     header {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         flex-wrap: nowrap;
+         height: auto;
+         padding: 0.5rem 1rem;
+         position: fixed;
+     }
+
+     .profile {
+         display: flex;
+         align-items: center;
+         gap: 0.5rem;
+     }
+
+     #hamburger {
+         display: block;
+         font-size: 2rem;
+     }
+
+     .navbar-links {
+         display: none;
+         flex-direction: column;
+         width: 100%;
+         text-align: center;
+         background-color: white;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         padding: 1rem 0;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     }
+
+
+     input[type="checkbox"]:checked~.navbar-links {
+         display: flex;
+     }
+
+     nav {
+         flex-direction: column;
+         gap: 1rem;
+     }
+
+     nav a {
+         padding: 0.5rem 1rem;
+         font-size: 1.2rem;
+         color: #333;
+         text-decoration: none;
+     }
+
+     nav a:hover {
+         color: #1AE0EC;
+         background-color: #f0f0f0;
+     }
+
+     .home {
+         margin: 2rem auto;
+     }
+
+     .home h1 {
+         font-weight: 500;
+         font-size: 2.5rem;
+     }
+
+     .home h2 {
+         font-weight: 400;
+         font-size: 2rem;
+         padding: 0.7rem;
+     }
+
+     .logobox {
+         flex-direction: row;
+         height: auto;
+         gap: 1rem;
+     }
+
+     .logo {
+         width: 70px;
+         height: 70px;
+     }
+
+     .about {
+         margin: 1rem;
+         padding: 1rem;
+     }
+
+     .profile2-img {
+         width: 10rem;
+         height: 10rem;
+     }
+
+     .about p {
+         font-size: 1rem;
+         line-height: 1.4;
+     }
+
+     .projects {
+         grid-template-columns: 1fr;
+         gap: 1rem;
+     }
+
+     .project {
+         width: 100%;
+         height: auto;
+         background-color: #f5efef;
+     }
+
+     .project button {
+         display: none;
+     }
+
+     .contact-form {
+         flex-direction: column;
+         align-items: stretch;
+     }
+
+     .form {
+         width: 100%;
+         padding: 1rem;
+     }
+
+     .contact-img img {
+         width: 10rem;
+         height: 10rem;
+     }
+
+     .contact-icons {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 1.5rem;
+         margin: 1.5 auto;
+     }
+
+     footer {
+         padding: 1rem;
+         font-size: 0.9rem;
+     }
+ }

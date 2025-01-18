@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.container {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container h1 {
+    direction: ltr;
+    font-size: 8rem;
+    font-family: "Satisfy", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0px 0px 36px #00000087;
+    margin-bottom: 1rem;
+}
+
+.container h3 {
+    font-size: 2rem;
+    font-family: "Varela Round", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-size: 1rem;
+    font-family: "Varela Round", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-family: "Varela Round", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+form input,
+form button {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+form input {
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    opacity: 1;
+    outline: none;
+}
+
+form input::placeholder {
+    color: #ffffffb3;
+    text-align: right;
+}
+
+form button {
+    padding: 0.8rem 2rem;
+    background: white;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #f0f0f0;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin: 1rem;
+    }
+
+    .container h1 {
+        font-size: 4rem;
+    }
+
+    .container h3 {
+        font-size: 1.2rem;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    form input,
+    form button {
+        max-width: 30rem;
+        height: 3rem;
+        border-radius: 0;
+    }
+
+    form input::placeholder {
+        color: transparent;
+    }
+
+    form button {
+        color: #2823FD;
+    }
+}

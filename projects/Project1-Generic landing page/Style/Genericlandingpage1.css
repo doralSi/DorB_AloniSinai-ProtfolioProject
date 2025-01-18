@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Heebo", serif;
+    direction: rtl;
+    color: #FFFFFF;
+}
+
+section {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.box {
+    width: 100%;
+    max-width: 1920px;
+    height: 33rem;
+    top: 0;
+    position: absolute;
+}
+
+.box img {
+    width: 100%;
+    max-height: 590px;
+    height: auto;
+}
+
+#mobile-img {
+    display: none;
+}
+
+.form-container {
+    width: 35rem;
+    height: 40rem;
+    background: #1A1A1AD4 0% 0% no-repeat padding-box;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-top: 7rem;
+    margin-right: 18rem;
+}
+
+.form-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.form-container p {
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-top: 1.2rem;
+}
+
+form {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.button-container button {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    background-color: #D31C75;
+    opacity: 100%;
+    cursor: pointer;
+    font-family: "Heebo", serif;
+    direction: rtl;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.button-container button:hover {
+    background-color: #7a5467;
+}
+
+@media (max-width: 768px) {
+
+
+
+    section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .box {
+        height: auto;
+        object-fit: cover;
+
+    }
+
+    #mobile-img {
+        display: block;
+    }
+
+    #web-img {
+        display: none;
+    }
+
+    .form-container {
+        width: 90%;
+        height: auto;
+        padding: 1.5rem;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 5rem;
+        margin-bottom: 15rem;
+    }
+
+    .form-container h1 {
+        font-size: 2.2rem;
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .form-container p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+
+    .button-container button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+}
